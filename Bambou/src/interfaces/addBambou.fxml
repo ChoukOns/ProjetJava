@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.accueilController">
+   <center>
+      <GridPane prefHeight="365.0" prefWidth="557.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="268.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="374.0" minWidth="10.0" prefWidth="332.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="19.0" prefWidth="127.0" styleClass="title" text="    Ajouter Bambou :" textAlignment="CENTER" textFill="#08793d">
+               <font>
+                  <Font name="Arial Narrow" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="163.0" text="   Type :" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="131.0" text="   Couleur:" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="150.0" text="   Taille :" GridPane.rowIndex="3" />
+            <TextField fx:id="tfTaille" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfCouleur" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="add" mnemonicParsing="false" onAction="#addFn" prefHeight="25.0" prefWidth="115.0" styleClass="button" text="Ajouter" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tfType" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

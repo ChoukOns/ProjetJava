@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="17.0" prefWidth="311.0" text="Bambous à chaume rouge" textFill="#08793d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea prefHeight="200.0" prefWidth="200.0" text="Ces types de bambous se caractérisent par leurs tiges rouge orangé vif, qui contrastent avec le feuillage vert. &#10;Ils sont souvent utilisés pour créer des points focaux dans les jardins et les parcs. &#10;Les tiges sont droites et épaisses, avec un diamètre pouvant atteindre 8 cm. &#10;Les bambous à chaume rouge ont une croissance rapide et peuvent atteindre jusqu'à 15 mètres de hauteur">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+   </children>
+</VBox>

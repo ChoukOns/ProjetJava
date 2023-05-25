@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.accueilController">
+ 
+   <top>
+      <GridPane prefHeight="150.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="10.0" prefWidth="306.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="294.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="31.0" minHeight="3.0" prefHeight="22.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="213.0" text="Les types de la plante Bambou :" textFill="#08793d">
+               <font>
+                  <Font name="Arial Narrow" size="14.0" />
+               </font></Label>
+            <Hyperlink fx:id="geants" onAction="#goToGiantBambooPage" prefHeight="23.0" prefWidth="197.0" text="Grants" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Hyperlink fx:id="noirs" onAction="#goToBlackBambooPage" text="Noirs" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Hyperlink fx:id="nains" onAction="#goToDwarfBambooPage" text="Nains" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Hyperlink fx:id="chaumeRouge" onAction="#goToRedStemBambooPage" text="ChaumeRouge" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Hyperlink fx:id="dores" onAction="#goToGoldenBambooPage" text="Dores" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Bambous géants" textFill="#1d9438" GridPane.rowIndex="1" />
+            <Label text="Bambous noirs" textFill="#1d9438" GridPane.rowIndex="2" />
+            <Label text="Bambous nains" textFill="#1d9438" GridPane.rowIndex="3" />
+            <Label text="Bambous à chaume rouge" textFill="#1d9438" GridPane.rowIndex="4" />
+            <Label text="Bambous dorés" textFill="#1d9438" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addbtn" mnemonicParsing="false" onAction="#goAjouter" prefHeight="25.0" prefWidth="96.0" styleClass="button" text="Ajouter" />
+            <Button fx:id="editbtn" mnemonicParsing="false" onAction="#goModifier" prefHeight="25.0" prefWidth="120.0" styleClass="button" text="Modifier" />
+            <Button fx:id="remove" mnemonicParsing="false" onAction="#deleteFn" prefHeight="25.0" prefWidth="114.0" text="Supprimer" />
+            <Button fx:id="calculbtn" mnemonicParsing="false" onAction="#goCalcul" prefHeight="25.0" prefWidth="105.0" text="Calculer" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="table" prefHeight="173.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="IdCol" prefWidth="126.0" text="Id" />
+            <TableColumn fx:id="typeCol" prefWidth="148.0" text="Type" />
+            <TableColumn fx:id="couleurCol" prefWidth="159.0" text="Couleur" />
+            <TableColumn fx:id="tailleCol" prefWidth="165.0" text="Taille" />
+         </columns>
+      </TableView>
+   </center>
+</BorderPane>
